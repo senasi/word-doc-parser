@@ -5,6 +5,8 @@
 // E-mail: alex@rembish.ru
 // Copyright 2009
 
+namespace WordDocParser;
+
 // Класс для работы с Microsoft Word Document (в народе doc), расширяет
 // Windows Compound Binary File Format. Давайте попробуем найти текст и
 // здесь

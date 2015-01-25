@@ -5,6 +5,8 @@
 // E-mail: alex@rembish.ru
 // Copyright 2009
 
+namespace WordDocParser;
+
 // Итак, мальчики-девочки, перед вами класс для работы с WCBFF, что расшифровывается, как
 // Windows Compound Binary File Format. Зачем это нужно? На основе этого
 // формата строятся такие "вкусные" файлы как .doc, .xls и .ppt. Поехали, смотреть, как
