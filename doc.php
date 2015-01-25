@@ -136,7 +136,7 @@ class doc extends cfb {
 		return $text;
 	}
 	// Функция преобразования из Unicode в UTF8, а то как-то не айс.
-	private function unicode_to_utf8($in) {
+	protected function unicode_to_utf8($in) {
 		$out = "";
 		// Идћм по двухбайтовым последовательностям
 		for ($i = 0; $i < strlen($in); $i += 2) {
@@ -165,11 +165,3 @@ class doc extends cfb {
 		return $out;
 	}
 }
-
-// Функция для преобразования doc в plain-text. Для тех, кому "не нужны классы".
-function doc2text($filename) {
-	$doc = new doc;
-	$doc->read($filename);
-	return $doc->parse();
-}
-?>
