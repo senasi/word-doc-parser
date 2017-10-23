@@ -157,7 +157,7 @@ class doc extends cfb {
 					case 0x15: $out .= "HYPER15"; break;
 				}
 			} else // Иначе преобразовываем в HTML entity
-				$out .= html_entity_decode("&#x".sprintf("%04x", $this->getShort(0, $cd)).";");
+			$out .= html_entity_decode("&#x".sprintf("%04x", $this->getShort(0, $cd)).";", ENT_COMPAT, 'UTF-8');
 		}
 
 		// И возвращаем результат
