@@ -1,5 +1,5 @@
 {
-    "name": "pirishe/word-doc-parser",
+    "name": "es-word/php-word-doc",
     "autoload": {
         "psr-4": {"WordDocParser\\": "./"}
     }
