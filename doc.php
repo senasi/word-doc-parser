@@ -89,6 +89,11 @@ class doc extends cfb {
 			// Хотя нет - вроде нашли, break, товарищи!
 			break;
 		}
+		
+		// to prevent infinite loop
+		if ($pieceTable === '') {
+			return '';
+		}
 
 		// Теперь заполняем массив character positions, пока не наткнћмся
 		// на последний CP.
